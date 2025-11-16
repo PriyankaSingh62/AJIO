@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJIO - Fashion & Lifestyle Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>AJIO</h1>
+                    <span class="tagline">Fashion & Lifestyle</span>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more" id="searchInput">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="user-menu">
+                        <i class="fas fa-user"></i>
+                        <span>Sign In / Join</span>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active">MEN</a></li>
+                <li><a href="#" class="nav-link">WOMEN</a></li>
+                <li><a href="#" class="nav-link">KIDS</a></li>
+                <li><a href="#" class="nav-link">INDIE</a></li>
+                <li><a href="#" class="nav-link">HOME & KITCHEN</a></li>
+                <li><a href="#" class="nav-link">ELECTRONICS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=400&fit=crop" alt="Fashion Sale">
+                <div class="hero-content">
+                    <h2>END OF SEASON SALE</h2>
+                    <p>Up to 70% OFF on Top Brands</p>
+                    <button class="cta-button">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=300&fit=crop" alt="Men's Clothing">
+                    <h3>Men's Clothing</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=300&h=300&fit=crop" alt="Women's Clothing">
+                    <h3>Women's Clothing</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=300&h=300&fit=crop" alt="Kids Wear">
+                    <h3>Kids Wear</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=300&fit=crop" alt="Footwear">
+                    <h3>Footwear</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop" alt="Accessories">
+                    <h3>Accessories</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=300&fit=crop" alt="Electronics">
+                    <h3>Electronics</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals-section">
+        <div class="container">
+            <h2 class="section-title">Hot Deals</h2>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-badge">50% OFF</div>
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=250&h=300&fit=crop" alt="Deal 1">
+                    <h3>Men's Shirts</h3>
+                    <p class="deal-price">₹999 <span class="original-price">₹1999</span></p>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">40% OFF</div>
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=250&h=300&fit=crop" alt="Deal 2">
+                    <h3>Women's Dresses</h3>
+                    <p class="deal-price">₹1499 <span class="original-price">₹2499</span></p>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">60% OFF</div>
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=250&h=300&fit=crop" alt="Deal 3">
+                    <h3>Sneakers</h3>
+                    <p class="deal-price">₹1999 <span class="original-price">₹4999</span></p>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">30% OFF</div>
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=250&h=300&fit=crop" alt="Deal 4">
+                    <h3>Smartphones</h3>
+                    <p class="deal-price">₹14999 <span class="original-price">₹21499</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get exclusive offers and new product updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AJIO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Bag</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: ₹<span id="cartTotal">0</span></strong>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
